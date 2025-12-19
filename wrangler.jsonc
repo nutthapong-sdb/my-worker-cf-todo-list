@@ -4,12 +4,12 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "my-worker-cf",
+	"name": "my-worker-cf-pure-js-worker",
 	"main": "src/index.js",
 	"compatibility_date": "2025-12-19",
 	"observability": {
 		"enabled": true
-	}
+	},
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -37,5 +37,12 @@
 	 * Service Bindings (communicate between multiple Workers)
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
 	 */
-	// "services": [  {   "binding": "MY_SERVICE",   "service": "my-service"  } ]
+	// "services": [  {   "binding": "MY_SERVICE",   "service": "my-service"  } ],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "my-todo-db",
+			"database_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+		}
+	]
 }
