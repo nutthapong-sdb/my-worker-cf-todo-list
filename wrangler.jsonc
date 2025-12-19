@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "my-worker-cf-pure-js-worker",
+	"name": "my-worker-cf-todo-list",
 	"main": "src/index.js",
 	"compatibility_date": "2025-12-19",
 	"observability": {
@@ -42,7 +42,7 @@
 		{
 			"binding": "DB",
 			"database_name": "my-todo-db",
-			"database_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+			"database_id": "e7d6751e-f15b-413d-baae-880da2ca68c9"
 		}
 	]
 }
